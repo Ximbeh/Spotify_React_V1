@@ -1,10 +1,11 @@
 
 import { Text, View, StyleSheet, Image } from 'react-native';
+import favIcon from '../../assets/img/fav.png'
 
 export default function AssetExample() {
   return (
      <View style={styles.playlist}>
-          <Image style={styles.capaPLaylist} source={require('../assets/img/fav.png')} />
+          <Image style={styles.capaPLaylist} source={favIcon} />
           <View style={styles.nomePlaylist}>
             <Text style={styles.textNomePlaylist}>Músicas Curtidas</Text>
           </View>

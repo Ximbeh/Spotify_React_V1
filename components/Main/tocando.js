@@ -1,11 +1,15 @@
 
 
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import Select from '../../assets/img/Select.png'
+import Heart from '../../assets/img/Heart.png'
+import Play from '../../assets/img/Play.png'
+import favIcon from '../../assets/img/fav.png'
 
 export default function AssetExample() {
   return (
       <TouchableOpacity style={styles.tocando} onPress={()=>poses.navigation.navigate("Home1")}>
-          <Image style={styles.capaMusicaTocando} source={require('../assets/img/fav.png')} /> 
+          <Image style={styles.capaMusicaTocando} source={favIcon} /> 
 
           <View style={styles.textosTocando}>
               <View style={styles.NomeMusica}>
@@ -18,9 +22,9 @@ export default function AssetExample() {
           </View>
   
            <View style={styles.iconesBotoes}> 
-              <Image style={styles.botoesIcone} source={require('../assets/img/Select.png')} /> 
-              <Image style={styles.botoesIcone} source={require('../assets/img/Heart.png')} /> 
-              <Image style={styles.botoesIcone} source={require('../assets/img/Play.png')} /> 
+              <Image style={styles.botoesIcone} source={Select} /> 
+              <Image style={styles.botoesIcone} source={Heart} /> 
+              <Image style={styles.botoesIcone} source={Play} /> 
            </View>
           </TouchableOpacity>
   );
